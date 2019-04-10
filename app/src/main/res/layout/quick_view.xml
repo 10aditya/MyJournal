@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="300sp"
+    android:background="#ffffff"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="140sp">
+
+        <ImageView
+            android:id="@+id/quick_view_image"
+            android:layout_width="match_parent"
+            android:layout_height="140sp"
+            android:layout_gravity="center_horizontal"
+            android:contentDescription=""
+            android:scaleType="centerCrop"
+            tools:ignore="ContentDescription" />
+
+        <TextView
+            android:id="@+id/no_of_images_Shower"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentEnd="true"
+            android:background="#78000000"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textColor="@android:color/white"
+            android:textSize="26sp" />
+
+        <ImageView
+            android:id="@+id/fav_sign_InQuickView"
+            android:layout_width="36sp"
+            android:layout_height="36sp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentTop="true"
+            android:contentDescription=""
+            android:src="@drawable/ic_favorite_black_24dp"
+            android:visibility="invisible"
+            tools:ignore="ContentDescription" />
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/quick_view_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginStart="8sp"
+        android:textColor="@color/fontc"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/quick_view_mood"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginStart="8sp"
+        android:text="New Text"
+        android:textColor="@color/fontc"
+        android:textSize="20sp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_marginTop="8sp"
+        android:background="@color/colorAccent" />
+
+    <TextView
+        android:id="@+id/quick_view_highlights"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginEnd="4sp"
+        android:layout_marginStart="8sp"
+        android:layout_marginTop="8sp"
+        android:textColor="@color/fontc"
+        android:textSize="20sp" />
+</LinearLayout>

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group
+        android:checkableBehavior="single"
+        android:enabled="true">
+        <item
+            android:id="@+id/nav_entries"
+            android:icon="@drawable/ic_view_agenda_black_24dp"
+            android:title="@string/entries_and_notes" />
+        <item
+            android:id="@+id/nav_calender"
+            android:icon="@drawable/ic_today_black_24dp"
+            android:title="@string/calender_view" />
+        <item
+            android:id="@+id/nav_favourites"
+            android:icon="@drawable/ic_favorite_black_24dp"
+            android:title="@string/favourites" />
+        <item
+            android:id="@+id/nav_imp"
+            android:icon="@drawable/ic_star_black_24dp"
+            android:title="@string/important_notes" />
+        <item
+            android:id="@+id/nav_changepin"
+            android:icon="@drawable/ic_https_black_24dp"
+            android:title="@string/change_pin" />
+
+    </group>
+    <group
+        android:checkableBehavior="single"
+        android:enabled="true">
+
+        <item
+            android:id="@+id/rate_us"
+            android:icon="@drawable/ic_star_half_black_24dp"
+            android:title="@string/rate_us" />
+    </group>
+
+</menu>

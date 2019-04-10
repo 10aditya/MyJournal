@@ -1,0 +1,64 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="24dp"
+    android:background="@color/material_darkgreen"
+    tools:context="com.utile.myjournal.fragments.ChangePINFragment">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        android:weightSum="1"
+        tools:ignore="UselessParent">
+
+        <TextView
+            android:id="@+id/enterpin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/makepin"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginBottom="37dp"
+            android:backgroundTint="@color/material_green"
+            android:ems="10"
+            android:gravity="center"
+            android:text="@string/enter_a_pin_to_secure_your_data"
+            android:textSize="20sp"
+            tools:ignore="LabelFor,TextFields" />
+
+        <EditText
+            android:id="@+id/makepin"
+            android:layout_width="250dp"
+            android:layout_height="50dp"
+            android:layout_centerInParent="true"
+            android:ems="10"
+            android:gravity="center"
+            android:hint="@string/create_new_pin"
+            android:inputType="numberPassword"
+            android:maxLength="10"
+            tools:ignore="LabelFor" />
+
+        <EditText
+            android:id="@+id/confirmpin"
+            android:layout_width="250dp"
+            android:layout_height="50dp"
+            android:layout_below="@+id/makepin"
+            android:layout_centerInParent="true"
+            android:ems="10"
+            android:gravity="center"
+            android:hint="@string/confirm_your_new_pin"
+            android:inputType="numberPassword"
+            android:maxLength="10"
+            tools:ignore="LabelFor" />
+
+        <Button
+            android:id="@+id/okaybutton"
+            android:layout_width="136sp"
+            android:layout_height="54sp"
+            android:layout_below="@+id/confirmpin"
+            android:layout_centerHorizontal="true"
+            android:text="@string/okay" />
+    </RelativeLayout>
+</FrameLayout>

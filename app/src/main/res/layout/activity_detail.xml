@@ -1,0 +1,248 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_detail"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context="com.utile.myjournal.activities.DetailActivity">
+
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/app_bar_layout2"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:fitsSystemWindows="true"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+
+        <android.support.design.widget.CollapsingToolbarLayout
+            android:id="@+id/collapse_toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fitsSystemWindows="true"
+            app:contentScrim="@color/material_blue"
+            app:expandedTitleMarginEnd="64dp"
+            app:expandedTitleMarginStart="16dp"
+            app:layout_scrollFlags="scroll|exitUntilCollapsed">
+
+            <ImageView
+                android:id="@+id/card_poster"
+                android:layout_width="match_parent"
+                android:layout_height="300dp"
+                android:fitsSystemWindows="true"
+                android:scaleType="centerCrop"
+                android:transitionName="testing"
+                app:layout_collapseMode="parallax"
+                tools:ignore="ContentDescription"
+                tools:targetApi="lollipop" />
+
+            <android.support.v7.widget.Toolbar
+                android:id="@+id/tool_bar"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                app:layout_collapseMode="pin"
+                app:popupTheme="@style/ThemeOverlay.AppCompat.Light" />
+        </android.support.design.widget.CollapsingToolbarLayout>
+    </android.support.design.widget.AppBarLayout>
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:background="#e0e0e0"
+        android:clipToPadding="false"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <RelativeLayout
+            android:id="@+id/huh"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#e0e0e0">
+
+            <LinearLayout
+                android:id="@+id/images_scroll_view"
+                android:layout_width="match_parent"
+                android:layout_height="110sp"
+                android:layout_marginTop="8sp"
+                android:background="@android:color/white"
+                android:orientation="horizontal"
+                android:paddingBottom="8sp"
+                android:paddingEnd="8sp"
+                android:paddingStart="8sp"
+                android:paddingTop="8sp"
+                android:visibility="gone"
+                android:weightSum="3">
+
+                <ImageView
+                    android:id="@+id/SecondImage"
+                    android:layout_width="0sp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    tools:ignore="ContentDescription"
+                    tools:targetApi="lollipop" />
+
+                <ImageView
+                    android:id="@+id/ThirdImage"
+                    android:layout_width="0sp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    tools:ignore="ContentDescription" />
+
+                <ImageView
+                    android:id="@+id/FourthImage"
+                    android:layout_width="0sp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    tools:ignore="ContentDescription" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/layoutForTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/images_scroll_view"
+                android:layout_marginTop="8sp">
+
+                <ImageView
+                    android:layout_width="54sp"
+                    android:layout_height="38sp"
+                    android:layout_marginBottom="8sp"
+                    android:layout_marginStart="8sp"
+                    android:layout_marginTop="8sp"
+                    android:background="@android:color/white"
+                    android:paddingBottom="4sp"
+                    android:paddingStart="6sp"
+                    android:paddingTop="4sp"
+                    android:src="@drawable/ic_text_fields_black_24dp"
+                    tools:ignore="ContentDescription,RtlSymmetry" />
+
+                <TextView
+                    android:padding="5.3sp"
+                    android:id="@+id/entrytitle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="8sp"
+                    android:layout_marginStart="8sp"
+                    android:layout_marginTop="8sp"
+                    android:background="@android:color/white"
+                    android:gravity="center_vertical"
+                    android:paddingEnd="8sp"
+                    android:paddingStart="8sp"
+                    android:text="location"
+                    android:textColor="@color/fontc"
+                    android:textSize="20sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/layoutForMood"
+                android:layout_width="match_parent"
+                android:layout_height="54sp"
+                android:layout_below="@+id/layoutForTitle">
+
+                <ImageView
+                    android:layout_width="54sp"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="8sp"
+                    android:layout_marginStart="8sp"
+                    android:layout_marginTop="8sp"
+                    android:background="@android:color/white"
+                    android:paddingBottom="4sp"
+                    android:paddingTop="4sp"
+                    android:src="@drawable/ic_mood_black_24dp"
+                    tools:ignore="ContentDescription" />
+
+                <TextView
+                    android:id="@+id/entrymood"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="8sp"
+                    android:layout_marginStart="8sp"
+                    android:layout_marginTop="8sp"
+                    android:background="@android:color/white"
+                    android:gravity="center_vertical"
+                    android:paddingEnd="8sp"
+                    android:paddingStart="8sp"
+                    android:text="location"
+                    android:textColor="@color/fontc"
+                    android:textSize="20sp" />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/highlight_s"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/layoutForMood"
+                android:layout_marginTop="8dp"
+                android:background="#ffffff"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="54sp"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="8sp"
+                    android:layout_marginStart="8sp"
+                    android:layout_marginTop="8sp"
+                    android:background="@android:color/white"
+                    android:paddingBottom="4sp"
+                    android:paddingTop="4sp"
+                    android:src="@drawable/ic_subject_black_24dp"
+                    tools:ignore="ContentDescription" />
+
+                <TextView
+                    android:id="@+id/highlights_container"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="8dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginRight="8dp"
+                    android:layout_marginTop="8dp"
+                    android:background="#ffffff" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/boomBoom"
+                android:layout_width="match_parent"
+                android:layout_height="54sp"
+                android:layout_below="@+id/highlight_s">
+
+                <ImageView
+                    android:layout_width="54sp"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="8sp"
+                    android:layout_marginStart="8sp"
+                    android:layout_marginTop="8sp"
+                    android:background="@android:color/white"
+                    android:paddingBottom="4sp"
+                    android:paddingTop="4sp"
+                    android:src="@drawable/ic_place_black_24dp"
+                    tools:ignore="ContentDescription" />
+
+                <TextView
+                    android:id="@+id/location_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="8sp"
+                    android:layout_marginStart="8sp"
+                    android:layout_marginTop="8sp"
+                    android:background="@android:color/white"
+                    android:gravity="center_vertical"
+                    android:maxLines="1"
+                    android:paddingEnd="8sp"
+                    android:paddingStart="8sp"
+                    android:text="location"
+                    android:textColor="@color/fontc"
+                    android:textSize="20sp" />
+            </LinearLayout>
+
+
+            <fragment
+                android:id="@+id/map"
+                android:name="com.google.android.gms.maps.MapFragment"
+                android:layout_width="match_parent"
+                android:layout_height="300sp"
+                android:layout_below="@+id/boomBoom" />
+
+        </RelativeLayout>
+    </android.support.v4.widget.NestedScrollView>
+
+</android.support.design.widget.CoordinatorLayout>

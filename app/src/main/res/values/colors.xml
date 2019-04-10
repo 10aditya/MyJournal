@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="material_blue">#0d47a1</color>
+    <color name="material_red">#d50000</color>
+    <color name="material_darkred">#b71c1c</color>
+    <color name="material_green">#64dd17</color>
+    <color name="material_darkgreen">#558b2f</color>
+    <color name="fontc">#000000</color>
+    <color name="statusColor">#d2d2d2</color>
+    <color name="transparent">#00000000</color>
+    <color name="color_permissions">#FFEB3B</color>
+    <color name="color_dark_permissions">#FBC02D</color>
+    <color name="color_custom_fragment_1">#E64A19</color>
+    <color name="color_dark_custom_fragment_1">#BF360C</color>
+    <color name="yellowLemon">#aeea00</color>
+    <color name="material_purple">#6a1b9a</color>
+    <color name="actual_greean">#00e676</color>
+</resources>

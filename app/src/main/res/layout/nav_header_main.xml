@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/about"
+    android:layout_width="match_parent"
+    android:layout_height="210dp">
+
+    <com.mikhaellopez.circularimageview.CircularImageView
+        android:id="@+id/userDP"
+        android:layout_width="76dp"
+        android:layout_height="76dp"
+        android:layout_alignParentStart="true"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="16dp"
+        android:src="@drawable/ic_account_box_black_24dp"
+        app:civ_border_color="@color/fontc"
+        app:civ_border_width="2dp"
+        app:civ_shadow_color="@color/fontc"
+        app:civ_shadow_radius="1"  />
+
+    <TextView
+        android:id="@+id/good"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginEnd="8sp"
+        android:layout_marginTop="30sp"
+        android:text="@string/good_afternoon"
+        android:textSize="24sp"
+        tools:ignore="RelativeOverlap" />
+
+    <TextView
+        android:id="@+id/no_of_entries"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/good"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="8sp"
+        android:layout_marginEnd="8sp"
+        android:text="New Text"
+        android:textSize="24sp" />
+
+</RelativeLayout>
